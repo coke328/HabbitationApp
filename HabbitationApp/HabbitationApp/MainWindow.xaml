@@ -1,0 +1,49 @@
+﻿<Window x:Class="HabbitationApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HabbitationApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1600" 
+        Loaded="Window_Loaded" Closing="Window_Closing" LostKeyboardFocus="Window_LostKeyboardFocus">
+    <Grid Margin="1,0,-1,0">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF9E97F3" Offset="0"/>
+                <GradientStop Color="#FFFD9DF1" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="380*"/>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="891*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="word1" Content="Button" Height="240" Margin="62,224,551,0" VerticalAlignment="Top" Width="337" FontSize="50" Background="#33646FCA" Grid.Column="2" BorderBrush="#00B31BE2" Foreground="#FF060812" FontFamily="KBIZgo M" Click="word1_Click"/>
+        <Button x:Name="word2" Content="Button" Height="240" Margin="472,223,141,0" VerticalAlignment="Top" Width="337" FontSize="50" Background="#33646FCA" Grid.Column="2" BorderBrush="#00B31BE2" Foreground="#FF060812" FontFamily="KBIZgo M" Click="word2_Click"/>
+        <Button x:Name="word4" Content="Button" Height="240" Margin="472,530,141,0" VerticalAlignment="Top" Width="337" FontSize="50" Background="#33646FCA" Grid.Column="2" BorderBrush="#00B31BE2" Foreground="#FF060812" FontFamily="KBIZgo M" Click="word4_Click"/>
+        <Button x:Name="word3" Content="Button" Height="240" Margin="62,530,551,0" VerticalAlignment="Top" Width="337" FontSize="50" Background="#33646FCA" Grid.Column="2" BorderBrush="#00B31BE2" Foreground="#FF060812" Click="word3_Click" FontFamily="KBIZgo M"/>
+        <TextBox x:Name="단어장이름" HorizontalAlignment="Left" Height="157" Margin="102,120,0,0" Text="영단어" TextWrapping="Wrap" VerticalAlignment="Top" Width="364" FontSize="100" FontWeight="Bold" BorderBrush="Transparent" Grid.ColumnSpan="2" FontFamily="KBIZgo M" Background="Transparent"/>
+        <TextBox x:Name="공부날짜" HorizontalAlignment="Left" Height="134" Margin="106,260,0,0" Text="DAY-01" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" FontSize="100" BorderBrush="#00000000" FontWeight="Normal" Grid.ColumnSpan="2" Background="Transparent" FontFamily="KBIZgo M"/>
+        <TextBox x:Name="단어공부해서컴퓨터잠금해제텍스트" HorizontalAlignment="Left" Margin="62,110,0,0" Text="단어 공부해서 컴퓨터 잠금해제" TextWrapping="Wrap" VerticalAlignment="Top" Height="88" Width="746" BorderBrush="#00000000" FontSize="50" Grid.Column="2" Background="Transparent" FontFamily="KBIZgo M" FontWeight="Bold">
+
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" SpreadMethod="Pad">
+                    <GradientStop Color="#FF8C31C3" Offset="0"/>
+                    <GradientStop Color="#FF254BBF" Offset="0.996"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBlock x:Name="answer" HorizontalAlignment="Left" Margin="68,468,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="114" Width="472" FontSize="80" FontWeight="Bold" FontFamily="KBIZgo M" Background="#33FFFFFF" Grid.ColumnSpan="2" TextAlignment="Center">
+            <TextBlock.Foreground>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FF7C0E9E" Offset="0"/>
+                    <GradientStop Color="#FFD436C7" Offset="1"/>
+                </RadialGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <TextBox x:Name="지시문" HorizontalAlignment="Left" Margin="86,665,0,0" Text="다음 단어의 뜻으로 알맞은 것은?" TextWrapping="Wrap" VerticalAlignment="Top" Height="149" Width="474" FontSize="40" BorderBrush="#00000000" Grid.ColumnSpan="2" Background="Transparent" FontStyle="Normal" FontFamily="KBIZgo M"/>
+
+
+    </Grid>
+</Window>
